@@ -14,3 +14,7 @@ See the results of execution in the GitHub 'Actions' tab.
 Recognize the intention of the code by reading the tests.
 Design the return type in the code.
 You may alter the test while keeping its intent.
+
+## Discussion
+
+What's `epsilon` doing in the test? If you had to choose its value, what would it be?
