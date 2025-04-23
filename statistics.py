@@ -6,7 +6,7 @@ def calculateStats(numbers):
     min=0
     if isEmpty(numbers):
         return {"avg":None,"max":None,"min":None}
-    if is_valid_number(numbers):
+    if not is_valid_number(numbers):
         return {"avg":None,"max":None,"min":None}
     average=sum(numbers)/len(numbers)
     max=max(numbers)
