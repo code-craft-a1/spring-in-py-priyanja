@@ -1,5 +1,5 @@
 import unittest
-import statistics1 as statistics
+import statistics
 import math
 
 
