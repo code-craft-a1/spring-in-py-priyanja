@@ -5,9 +5,9 @@ def calculateStats(numbers):
     max=0
     min=0
     if isEmpty(numbers):
-        return {"avg":None,"max":None,"min":None}
+        return {"avg":float("nan"),"max":float("nan"),"min":float("nan")}
     if not is_valid_number(numbers):
-        return {"avg":None,"max":None,"min":None}
+        return {"avg":float("nan"),"max":float("nan"),"min":float("nan")}
     average=sum(numbers)/len(numbers)
     max=max(numbers)
     min=min(numbers)
@@ -25,4 +25,3 @@ def is_valid_number(numbers):
         if math.isnan(num):
             return False
     return True
-        
