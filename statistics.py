@@ -1,3 +1,5 @@
+import math 
+
 def calculateStats(numbers):
     average=0
     max=0
@@ -20,7 +22,7 @@ def isEmpty(numbers):
         
 def is_valid_number(numbers):
     for num in numbers:
-        if isnan(num):
+        if math.isnan(num):
             return False
     return True
         
