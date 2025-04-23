@@ -1,4 +1,26 @@
-
 def calculateStats(numbers):
-  # implement the computation of statistics here and return the results
-  return None
+    average=0
+    max=0
+    min=0
+    if isEmpty(numbers):
+        return None
+    if is_valid_number(numbers):
+        return None
+    average=sum(numbers)/len(numbers)
+    max=max(numbers)
+    min=min(numbers)
+    return {"avg":average,"max":max,"min":min}
+    
+
+def isEmpty(numbers):
+    if len(numbers)==0:
+        return True
+    else:
+        return False
+        
+def is_valid_number(numbers):
+    for num in numbers:
+        if isnan(num):
+            return False
+    return True
+        
