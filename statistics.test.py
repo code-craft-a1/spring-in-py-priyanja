@@ -33,10 +33,10 @@ class StatsTest(unittest.TestCase):
     self.assertTrue(math.isnan(computedStats["min"]))
     
   def test_report_for_integer(self):
-    computedStats = statistics.calculateStats([1, 8, 3])
+    computedStats = statistics.calculateStats([1, 0, 5])
     epsilon = 0.001
-    self.assertAlmostEqual(computedStats["avg"], 4, delta=epsilon)
-    self.assertAlmostEqual(computedStats["max"], 8, delta=epsilon)
+    self.assertAlmostEqual(computedStats["avg"], 2, delta=epsilon)
+    self.assertAlmostEqual(computedStats["max"], 5, delta=epsilon)
     self.assertAlmostEqual(computedStats["min"], 1, delta=epsilon)
 
   def test_report_for_singleNo(self):
