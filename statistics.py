@@ -1,12 +1,13 @@
 import math 
 
+def is_invalid_data(numbers):
+    return isEmpty(numbers) or not is_valid_number(numbers)
+
 def calculateStats(numbers):
     average=0
     maximum=0
     minimum=0
-    if isEmpty(numbers):
-        return {"avg":float("nan"),"max":float("nan"),"min":float("nan")}
-    if not is_valid_number(numbers):
+    if is_invalid_data(numbers):
         return {"avg":float("nan"),"max":float("nan"),"min":float("nan")}
     average=sum(numbers)/len(numbers)
     maximum=max(numbers)
